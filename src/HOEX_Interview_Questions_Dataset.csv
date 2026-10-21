@@ -1,0 +1,204 @@
+ID,Question Text,Type,Category,Difficulty Level,Primary Criteria
+SF01,"What inspired you to apply to this university specifically, beyond its academic programs?",motivational,school_fit,Medium,C7_School Fit
+CF01,What would you do if you were not accepted to your top-choice university?,situational,challenge_failure,Medium,C6_Confidence & Composure
+RF01,How do you define success for yourself?,intellectual,reflection,Medium,C3_Personal Thinking
+SF02,How do you see yourself contributing to our campus culture in the first year?,motivational,school_fit,Medium,C7_School Fit
+RF02,"What role does diversity play in your life, and why is it important in a university setting?",intellectual,reflection,Medium,C3_Personal Thinking
+SI01,What personal qualities do you think make you a good fit for this university?,personal,self_introduction,Easy,C7_School Fit
+SI02,Can you describe a specific moment when you felt proud of yourself?,behavioral,self_introduction,Easy,C3_Personal Thinking
+RF03,"If you could ask our admissions committee one question, what would it be and why?",creative,reflection,Hard,C3_Personal Thinking
+SI03,What's something about you that's not evident from your application?,personal,self_introduction,Medium,C3_Personal Thinking
+RF04,How have you grown or changed over the past year?,behavioral,reflection,Easy,C3_Personal Thinking
+AI01,"If you could study anything without worrying about future careers, what would it be and why?",intellectual,academic_interests,Easy,C3_Personal Thinking
+SF03,What do you hope to learn or experience in your first semester of college?,motivational,school_fit,Easy,C7_School Fit
+SI04,How do you usually make big decisions? Can you give an example?,behavioral,self_introduction,Medium,C4_Presentation & Structure
+SF04,What would your 'dream day' at college look like?,creative,school_fit,Easy,C7_School Fit
+CF02,How do you deal with uncertainty or setbacks in your plans?,behavioral,challenge_failure,Medium,C6_Confidence & Composure
+AI02,What's a specific topic in your favorite subject that fascinates you and why?,intellectual,academic_interests,Easy,C2_Content & Ideas
+AI03,"Can you walk me through a piece of work (essay, project, etc.) you are most proud of?",behavioral,academic_interests,Medium,C2_Content & Ideas
+AI04,What research or academic challenge would you like to tackle in college?,motivational,academic_interests,Medium,C7_School Fit
+AI05,"If you could design a course for this university, what would it be about?",creative,academic_interests,Hard,C2_Content & Ideas
+CF03,How do you stay motivated when studying a topic that doesn't interest you?,behavioral,challenge_failure,Medium,C6_Confidence & Composure
+RF05,Can you explain a time when your perspective on a subject completely changed?,intellectual,reflection,Medium,C3_Personal Thinking
+AI06,What is a book or article you've recently read for school that left a strong impression on you?,factual,academic_interests,Easy,C2_Content & Ideas
+CF04,How do you approach time management during periods of academic stress?,behavioral,challenge_failure,Easy,C4_Presentation & Structure
+AI07,Have you ever had to teach yourself a subject or skill outside of school? What was that like?,behavioral,academic_interests,Medium,C3_Personal Thinking
+EC01,Can you describe the last time you collaborated with peers on an academic project? What role did you play?,behavioral,extracurriculars,Easy,C2_Content & Ideas
+AI08,What unique academic interest or passion do you bring that sets you apart from other applicants?,personal,academic_interests,Hard,C3_Personal Thinking
+SI05,Tell me about an academic mentor or teacher who has influenced your life.,personal,self_introduction,Easy,C3_Personal Thinking
+RF06,"What's a specific academic skill you want to improve in college, and how do you plan to do so?",behavioral,reflection,Medium,C3_Personal Thinking
+AI09,Do you think grades are a true reflection of a student's abilities? Why or why not?,intellectual,academic_interests,Hard,C3_Personal Thinking
+AI10,"If you could master one academic skill instantly, what would it be and why?",situational,academic_interests,Easy,C3_Personal Thinking
+AI11,What has been the most intellectually stimulating experience you've had in high school?,behavioral,academic_interests,Medium,C2_Content & Ideas
+AI12,Can you describe how you approach solving a challenging problem or question?,intellectual,academic_interests,Medium,C2_Content & Ideas
+CF05,How do you handle moments when you feel overwhelmed by academics?,behavioral,challenge_failure,Easy,C6_Confidence & Composure
+RF07,What role does curiosity play in your learning process?,intellectual,reflection,Easy,C3_Personal Thinking
+AI13,How do you decide what academic opportunities to prioritize?,behavioral,academic_interests,Medium,C4_Presentation & Structure
+EC02,What is the most meaningful contribution you've made to a club or organization?,behavioral,extracurriculars,Easy,C2_Content & Ideas
+LD01,Can you describe a project you initiated or led and what you learned from the experience?,behavioral,leadership,Medium,C2_Content & Ideas
+EC03,How do you balance academics with extracurricular activities?,behavioral,extracurriculars,Easy,C4_Presentation & Structure
+EC04,What extracurricular activity has taught you the most about teamwork?,behavioral,extracurriculars,Easy,C2_Content & Ideas
+CF06,Have you ever faced a conflict within a group or team? How did you resolve it?,behavioral,challenge_failure,Medium,C8_Challenging Questions
+CG01,How has your involvement in extracurricular activities shaped your future goals?,intellectual,career_goals,Medium,C7_School Fit
+SI06,What do you do to unwind or relax after a busy day of school and activities?,personal,self_introduction,Easy,C3_Personal Thinking
+EC05,What motivates you to keep participating in your extracurricular commitments?,motivational,extracurriculars,Easy,C3_Personal Thinking
+EC06,What is one lesson you've learned from volunteering or serving your community?,behavioral,extracurriculars,Easy,C3_Personal Thinking
+EC07,"Which extracurricular activity do you feel most passionate about, and why?",motivational,extracurriculars,Easy,C3_Personal Thinking
+LD02,How have you used your skills to help others in your school or community?,behavioral,leadership,Medium,C2_Content & Ideas
+SI07,"What role do you typically play in group settings (e.g., leader, problem-solver)?",personal,self_introduction,Easy,C3_Personal Thinking
+CF07,Can you describe a time when you had to collaborate with people who had different views from yours?,behavioral,challenge_failure,Medium,C8_Challenging Questions
+EC08,What would you do if you had to drop one of your extracurricular commitments? How would you decide?,situational,extracurriculars,Medium,C3_Personal Thinking
+LD03,"Have you ever created something entirely new (an event, initiative, or idea)? What was the result?",behavioral,leadership,Hard,C2_Content & Ideas
+CF08,What's the most challenging part of managing your extracurricular commitments?,behavioral,challenge_failure,Medium,C6_Confidence & Composure
+RF08,Which extracurricular experience has had the biggest impact on your personal growth?,behavioral,reflection,Medium,C3_Personal Thinking
+SF05,"If you could start any club or activity on our campus, what would it be and why?",creative,school_fit,Hard,C7_School Fit
+LD04,Have you ever had to advocate for a cause or idea you care about? What was the result?,behavioral,leadership,Hard,C3_Personal Thinking
+CF09,What's one thing you wish you had done differently in your extracurricular involvement?,pressure,challenge_failure,Medium,C8_Challenging Questions
+SI08,"What's a core value you hold, and how has it shaped your decisions?",personal,self_introduction,Medium,C3_Personal Thinking
+CF10,Can you describe a moment when you had to step outside your comfort zone?,behavioral,challenge_failure,Easy,C3_Personal Thinking
+CF11,"What does resilience mean to you, and can you share an example of a time you demonstrated it?",behavioral,challenge_failure,Medium,C3_Personal Thinking
+CF12,How do you typically handle constructive criticism?,behavioral,challenge_failure,Easy,C6_Confidence & Composure
+CF13,"Have you ever had to take responsibility for a mistake? What happened, and what did you learn?",behavioral,challenge_failure,Medium,C8_Challenging Questions
+RF09,What role does empathy play in your interactions with others?,intellectual,reflection,Easy,C3_Personal Thinking
+ED01,Can you share a time when you stood up for something you believed in?,behavioral,ethical_dilemma,Hard,C3_Personal Thinking
+CF14,How do you approach working with people who think differently from you?,situational,challenge_failure,Medium,C8_Challenging Questions
+SI09,What is one thing you wish people knew about you?,personal,self_introduction,Easy,C3_Personal Thinking
+RF10,Have you ever changed your mind about a deeply held belief? What caused the change?,pressure,reflection,Hard,C3_Personal Thinking
+RF11,"How do you typically respond to failure, and what does it teach you?",intellectual,reflection,Medium,C8_Challenging Questions
+SI10,"What motivates you to pursue your goals, even when things get difficult?",motivational,self_introduction,Easy,C3_Personal Thinking
+SI11,"Who has influenced your personal values the most, and how?",personal,self_introduction,Easy,C3_Personal Thinking
+RF12,"What is one characteristic you're working to improve about yourself, and why?",behavioral,reflection,Medium,C3_Personal Thinking
+CF15,How do you handle disagreements or conflicts in a productive way?,situational,challenge_failure,Medium,C8_Challenging Questions
+EC09,Can you share a time when you helped someone without expecting anything in return?,behavioral,extracurriculars,Easy,C2_Content & Ideas
+ED02,"What does integrity mean to you, and how do you practice it in your daily life?",intellectual,ethical_dilemma,Medium,C3_Personal Thinking
+ED03,Have you ever had to make a difficult ethical decision? What happened?,behavioral,ethical_dilemma,Hard,C8_Challenging Questions
+RF13,"What is the most meaningful compliment you've ever received, and why?",personal,reflection,Easy,C3_Personal Thinking
+SI12,What drives your curiosity and thirst for learning?,personal,self_introduction,Easy,C3_Personal Thinking
+RF14,"If you could relive one moment from your life, what would it be and why?",personal,reflection,Easy,C3_Personal Thinking
+CF16,"What is a mistake you've made that you are grateful for, and why?",behavioral,challenge_failure,Medium,C8_Challenging Questions
+CE01,"If you could solve one global issue, what would it be, and how would you approach it?",situational,current_events,Hard,C2_Content & Ideas
+RF15,"How do you define happiness, and how do you pursue it?",intellectual,reflection,Easy,C3_Personal Thinking
+CF17,"What's a challenge you foresee in college, and how do you plan to address it?",situational,challenge_failure,Medium,C6_Confidence & Composure
+RF16,"If you could talk to your future self 10 years from now, what would you ask them?",creative,reflection,Medium,C3_Personal Thinking
+CG02,"What does 'making an impact' mean to you, and how do you hope to achieve it?",intellectual,career_goals,Medium,C3_Personal Thinking
+RF17,What's a habit or mindset you've developed that has significantly improved your life?,behavioral,reflection,Easy,C3_Personal Thinking
+CG03,How do you hope to grow as a person during your college years?,motivational,career_goals,Easy,C7_School Fit
+RF18,"If you could write a letter to your younger self, what advice would you give?",creative,reflection,Easy,C3_Personal Thinking
+RF19,What's one thing you've learned about yourself in the past year?,personal,reflection,Easy,C3_Personal Thinking
+SI13,"If someone wrote a book about your life, what would the title be and why?",creative,self_introduction,Medium,C3_Personal Thinking
+RF20,What's a question you've always wanted to answer but haven't been asked yet?,creative,reflection,Hard,C3_Personal Thinking
+CG04,How do you define success for yourself in the next five years?,intellectual,career_goals,Medium,C7_School Fit
+CF18,"What's a risk you've taken that paid off, and what did you learn from it?",behavioral,challenge_failure,Medium,C2_Content & Ideas
+SI14,How would you describe your ideal day?,creative,self_introduction,Easy,C3_Personal Thinking
+RF21,"If you could shadow any person for a day, who would it be and why?",creative,reflection,Easy,C3_Personal Thinking
+RF22,"What's something you've done recently that made you uncomfortable, and how did it help you grow?",behavioral,reflection,Medium,C3_Personal Thinking
+RF23,How do you hope to be remembered by your peers after graduation?,intellectual,reflection,Medium,C3_Personal Thinking
+CF19,"What's one thing you're afraid of, and how do you plan to overcome it?",pressure,challenge_failure,Hard,C8_Challenging Questions
+SF06,Why did you choose to pursue this specific major at our institution?,motivational,school_fit,Easy,C7_School Fit
+SF07,"Which of our faculty members' research interests aligns most with yours, and why?",factual,school_fit,Hard,C7_School Fit
+SF08,How does our university's approach to education differ from other schools you've considered?,intellectual,school_fit,Hard,C7_School Fit
+SF09,What campus resources or programs are you most excited to take advantage of?,motivational,school_fit,Easy,C7_School Fit
+SF10,"If you could collaborate with any professor at our university, who would it be and why?",creative,school_fit,Hard,C7_School Fit
+SF11,How do you see our university's values aligning with your own personal values?,intellectual,school_fit,Medium,C7_School Fit
+SF12,What specific aspect of our campus community drew you to apply here?,motivational,school_fit,Easy,C7_School Fit
+SF13,Have you attended any events or visited our campus? What stood out to you?,personal,school_fit,Easy,C7_School Fit
+SF14,How do you plan to contribute to student life beyond academics at our university?,motivational,school_fit,Medium,C7_School Fit
+SF15,What do you know about our university's approach to undergraduate research?,factual,school_fit,Medium,C7_School Fit
+SF16,What would you hope to change or improve about our university if you could?,pressure,school_fit,Hard,C7_School Fit
+SF17,How do you think studying in our geographic location will shape your experience?,intellectual,school_fit,Medium,C7_School Fit
+SF18,What student organization or club at our university would you want to join immediately?,motivational,school_fit,Easy,C7_School Fit
+SF19,How does our university's alumni network factor into your decision to apply here?,intellectual,school_fit,Medium,C7_School Fit
+SF20,What does our university's motto or mission statement mean to you personally?,intellectual,school_fit,Hard,C7_School Fit
+SI15,"How would your closest friends describe you in three words, and would you agree?",personal,self_introduction,Easy,C3_Personal Thinking
+SI16,What is the one experience that has shaped who you are most fundamentally?,behavioral,self_introduction,Medium,C3_Personal Thinking
+SI17,What do you consider your greatest personal achievement outside of academics?,personal,self_introduction,Medium,C3_Personal Thinking
+SI18,How has your cultural or family background influenced your identity?,personal,self_introduction,Medium,C3_Personal Thinking
+SI19,What is a skill or talent you have that most people don't know about?,personal,self_introduction,Easy,C3_Personal Thinking
+SI20,"Describe yourself using a metaphor_what object, animal, or phenomenon best represents you?",creative,self_introduction,Hard,C3_Personal Thinking
+AI14,What interdisciplinary connection between two subjects excites you the most?,intellectual,academic_interests,Hard,C2_Content & Ideas
+AI15,"If you had unlimited funding for a research project, what would you investigate and why?",situational,academic_interests,Hard,C2_Content & Ideas
+AI16,Tell me about a time you disagreed with something taught in class and how you handled it.,behavioral,academic_interests,Hard,C8_Challenging Questions
+AI17,What academic concept or theory has changed the way you see the world?,intellectual,academic_interests,Medium,C2_Content & Ideas
+AI18,How do you stay current with developments in your area of academic interest?,behavioral,academic_interests,Medium,C2_Content & Ideas
+AI19,"What subject do you wish were offered at your school, and why does it matter?",intellectual,academic_interests,Medium,C2_Content & Ideas
+AI20,Can you explain a complex concept from your favorite subject in simple terms?,factual,academic_interests,Hard,C2_Content & Ideas
+EC10,How did you first get involved in your most meaningful extracurricular activity?,behavioral,extracurriculars,Easy,C2_Content & Ideas
+EC11,What is the biggest responsibility you've held in an extracurricular setting?,behavioral,extracurriculars,Medium,C2_Content & Ideas
+EC12,Have you ever had to quit an activity you cared about? What led to that decision?,behavioral,extracurriculars,Hard,C8_Challenging Questions
+EC13,"How has participation in arts, sports, or clubs shaped your perspective on life?",intellectual,extracurriculars,Medium,C3_Personal Thinking
+EC14,What's the most unexpected thing you've learned through an extracurricular activity?,behavioral,extracurriculars,Medium,C2_Content & Ideas
+EC15,"If you could turn one of your extracurricular interests into a career, which would it be?",situational,extracurriculars,Medium,C7_School Fit
+EC16,How do you decide which extracurricular opportunities are worth pursuing?,intellectual,extracurriculars,Medium,C3_Personal Thinking
+EC17,Describe a time when your extracurricular commitment positively impacted your community.,behavioral,extracurriculars,Medium,C2_Content & Ideas
+EC18,"What is one extracurricular achievement you are genuinely proud of, and why?",personal,extracurriculars,Easy,C3_Personal Thinking
+EC19,Have you ever taken on a leadership role you didn't feel ready for? What happened?,behavioral,extracurriculars,Hard,C8_Challenging Questions
+EC20,How do your extracurricular activities complement your academic goals?,intellectual,extracurriculars,Medium,C7_School Fit
+LD05,Describe a situation where you had to lead a team through a significant challenge.,behavioral,leadership,Medium,C2_Content & Ideas
+LD06,"What leadership style do you naturally gravitate toward, and why?",personal,leadership,Medium,C3_Personal Thinking
+LD07,Tell me about a time you had to make an unpopular decision as a leader.,behavioral,leadership,Hard,C8_Challenging Questions
+LD08,How do you motivate people who are resistant to change?,situational,leadership,Hard,C8_Challenging Questions
+LD09,Describe a moment when your leadership directly impacted someone else's growth.,behavioral,leadership,Medium,C2_Content & Ideas
+LD10,Have you ever had to delegate tasks you would have preferred to do yourself? How did that go?,behavioral,leadership,Medium,C2_Content & Ideas
+LD11,What do you think is the most important quality of an effective leader?,intellectual,leadership,Medium,C3_Personal Thinking
+LD12,Tell me about a time you led without a formal title or authority.,behavioral,leadership,Hard,C2_Content & Ideas
+LD13,How do you handle team members who are not contributing equally?,situational,leadership,Hard,C8_Challenging Questions
+LD14,"What is the biggest leadership mistake you've made, and what did you learn?",behavioral,leadership,Hard,C8_Challenging Questions
+LD15,How do you balance being a leader and being a team member at the same time?,intellectual,leadership,Medium,C3_Personal Thinking
+LD16,Describe a time you had to resolve a conflict between two people you were leading.,behavioral,leadership,Hard,C8_Challenging Questions
+LD17,"What does servant leadership mean to you, and have you ever practiced it?",intellectual,leadership,Hard,C3_Personal Thinking
+LD18,How do you build trust with a group of people you've just started leading?,situational,leadership,Medium,C2_Content & Ideas
+LD19,What leader_real or historical_do you most admire and why?,intellectual,leadership,Easy,C3_Personal Thinking
+LD20,"If your team strongly disagreed with your decision, how would you respond?",pressure,leadership,Hard,C8_Challenging Questions
+CG05,Where do you see yourself professionally five years after graduating?,intellectual,career_goals,Medium,C7_School Fit
+CG06,How did you first become interested in the career path you're pursuing?,personal,career_goals,Easy,C7_School Fit
+CG07,What specific skills do you hope to develop in college to prepare for your career?,motivational,career_goals,Medium,C7_School Fit
+CG08,"Have you done any internships, shadowing, or work experience related to your field of interest?",behavioral,career_goals,Easy,C7_School Fit
+CG09,What problem in the world do you most want your career to help solve?,intellectual,career_goals,Hard,C7_School Fit
+CG10,How do you plan to stay adaptable in a rapidly changing job market?,situational,career_goals,Hard,C7_School Fit
+CG11,What does success look like to you at the peak of your career?,intellectual,career_goals,Medium,C7_School Fit
+CG12,"If your dream career suddenly became unavailable, what would your backup plan be?",situational,career_goals,Medium,C6_Confidence & Composure
+CG13,How have you explored your career interests outside of school?,behavioral,career_goals,Easy,C7_School Fit
+CG14,"Do you see yourself working in the private sector, public sector, or nonprofit world? Why?",intellectual,career_goals,Medium,C7_School Fit
+CG15,How does your intended major directly connect to the career you envision?,intellectual,career_goals,Medium,C7_School Fit
+CG16,"What industry trends are you following, and how do they influence your career thinking?",factual,career_goals,Hard,C2_Content & Ideas
+CG17,"Who in your intended field do you look up to, and what have you learned from them?",personal,career_goals,Medium,C7_School Fit
+CG18,Have you ever had an experience that made you question your chosen career path?,behavioral,career_goals,Hard,C8_Challenging Questions
+CG19,What would you want your professional legacy to be?,intellectual,career_goals,Hard,C7_School Fit
+CG20,How do you think college will bridge the gap between your current skills and your career goals?,motivational,career_goals,Medium,C7_School Fit
+ED04,"If you discovered a classmate was cheating on an important exam, what would you do?",situational,ethical_dilemma,Hard,C8_Challenging Questions
+ED05,Have you ever been in a situation where doing the right thing cost you something? What happened?,behavioral,ethical_dilemma,Hard,C8_Challenging Questions
+ED06,How do you respond when you witness someone being treated unfairly?,situational,ethical_dilemma,Medium,C3_Personal Thinking
+ED07,Do you think it is ever acceptable to break a rule for a greater good? Explain your reasoning.,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+ED08,How would you handle a situation where your personal values conflicted with a group decision?,situational,ethical_dilemma,Hard,C8_Challenging Questions
+ED09,Have you ever had to choose between loyalty to a friend and doing what was right?,behavioral,ethical_dilemma,Hard,C8_Challenging Questions
+ED10,How do you think about your responsibilities to society versus your personal ambitions?,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+ED11,Describe a time when you had to speak up about something that felt uncomfortable or risky.,behavioral,ethical_dilemma,Hard,C8_Challenging Questions
+ED12,What do you think is the biggest ethical challenge facing your generation?,intellectual,ethical_dilemma,Hard,C2_Content & Ideas
+ED13,"If you were given access to confidential information that could help you win a competition fairly, would you use it?",situational,ethical_dilemma,Hard,C8_Challenging Questions
+ED14,How do you decide what is right when there is no clear answer?,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+ED15,Have you ever stayed silent when you should have spoken up? What would you do differently?,behavioral,ethical_dilemma,Hard,C8_Challenging Questions
+ED16,How do you balance respecting different cultural values with your own ethical standards?,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+ED17,"If a mentor asked you to do something you believed was unethical, how would you respond?",situational,ethical_dilemma,Hard,C8_Challenging Questions
+ED18,How should universities handle students who plagiarize? Do you think current policies are fair?,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+ED19,Tell me about a time you had to apologize for something that wasn't entirely your fault.,behavioral,ethical_dilemma,Medium,C8_Challenging Questions
+ED20,How do you think about privilege and responsibility in the context of your own background?,intellectual,ethical_dilemma,Hard,C3_Personal Thinking
+CE02,"What is one global issue that you follow closely, and what is your perspective on it?",intellectual,current_events,Hard,C2_Content & Ideas
+CE03,How do you think artificial intelligence will change higher education in the next decade?,intellectual,current_events,Hard,C2_Content & Ideas
+CE04,"What recent scientific discovery or development excites you the most, and why?",intellectual,current_events,Medium,C2_Content & Ideas
+CE05,"How do you stay informed about world events, and how do you evaluate the credibility of sources?",behavioral,current_events,Medium,C3_Personal Thinking
+CE06,What do you think is the most pressing environmental challenge facing the world today?,intellectual,current_events,Hard,C2_Content & Ideas
+CE07,How has a current global trend directly affected your life or community?,behavioral,current_events,Medium,C3_Personal Thinking
+CE08,What policy or social change would you most like to see happen in your lifetime?,intellectual,current_events,Hard,C3_Personal Thinking
+CE09,How do you think universities should respond to major geopolitical events on campus?,intellectual,current_events,Hard,C2_Content & Ideas
+CE10,What is your view on the role of technology in solving social problems?,intellectual,current_events,Hard,C2_Content & Ideas
+CE11,What current event has made you reconsider a belief you previously held?,intellectual,current_events,Hard,C3_Personal Thinking
+CE12,How do you think the rise of social media has changed the way young people engage with the world?,intellectual,current_events,Medium,C2_Content & Ideas
+CE13,What is a misconception many people have about an issue you care deeply about?,pressure,current_events,Hard,C3_Personal Thinking
+CE14,"If you could advise a world leader on one decision right now, what would you say?",situational,current_events,Hard,C2_Content & Ideas
+CE15,How do you think economic inequality affects access to higher education?,intellectual,current_events,Hard,C2_Content & Ideas
+CE16,What role do you think young people should play in addressing climate change?,intellectual,current_events,Medium,C3_Personal Thinking
+CE17,Have you ever taken action_however small_in response to a social or global issue?,behavioral,current_events,Medium,C2_Content & Ideas
+CE18,What trend in your intended field of study are you most concerned or excited about?,intellectual,current_events,Hard,C2_Content & Ideas
+CE19,How do you think higher education institutions can better serve underrepresented communities?,intellectual,current_events,Hard,C2_Content & Ideas
+CE20,What is one piece of 'conventional wisdom' about the world that you think deserves to be challenged?,pressure,current_events,Hard,C3_Personal Thinking
+CF20,"What is the most significant obstacle you have overcome, and how has it defined you?",behavioral,challenge_failure,Hard,C8_Challenging Questions

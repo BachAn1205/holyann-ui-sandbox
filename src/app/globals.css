@@ -1,0 +1,461 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-overlay: var(--overlay);
+
+  /* ── Font stack (Hướng 3 · Lexend + Nunito) ─────────────
+     Lexend  → body / UI / app chrome
+     Nunito  → headings
+     Playfair → decorative / display / hero
+     ─────────────────────────────────────────────────────── */
+  --font-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-university-sans: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  --font-university-display: var(--font-playfair), Georgia, serif;
+  --font-mono:
+    var(--font-noto-serif-display), Georgia, serif;
+  --font-noto-serif-display: var(--font-noto-serif-display);
+  --font-essay: Georgia, "Times New Roman", serif;
+
+  /* Color tokens */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LIGHT MODE
+   ═══════════════════════════════════════════════════════════ */
+:root {
+  --radius: 0.625rem;
+
+  /* Background hierarchy */
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --surface-elevated: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --overlay-dark: rgba(0, 0, 0, 0.9);
+
+  --foreground: #0f172a;
+
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+
+  /* PRIMARY: Holyann navy */
+  --primary: #0f4c81;
+  --primary-foreground: #ffffff;
+
+  /* SECONDARY: Cyan */
+  --secondary: #00b4db;
+  --secondary-foreground: #ffffff;
+
+  /* Brand helpers */
+  --brand-cyan: #00c6ff;
+  --brand-blue: #0072ff;
+  --accent-alt: #f59e0b;
+  --brand-deep: #0f6093;
+  --brand-deep-darker: #0a4b75;
+  --brand-gradient2: #2b8cc9;
+  --tick-gray-500: #6b7280;
+
+  /* ACCENT: Amber CTA */
+  --accent: #f5a623;
+  --accent-foreground: #ffffff;
+
+  /* Extra UI */
+  --grit-perseverance: #8b5cf6;
+  --grit-consistency: #ec4899;
+  --grit-strong: #9333ea;
+  --muted-light: #e5e7eb;
+  --tick-gray: #4b5563;
+  --stroke-blue: #2563eb;
+  --tw-blue-500: #3b82f6;
+
+  --footer-bg: #0f172a;
+  --instagram: #e1306c;
+  --google-blue: #4285f4;
+  --google-green: #34a853;
+  --google-yellow: #fbbc05;
+  --google-red: #ea4335;
+  --facebook-blue: #1877f2;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --destructive: #ef4444;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0f4c81;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DARK MODE
+   ═══════════════════════════════════════════════════════════ */
+.dark {
+  --background: #0c1222;
+  --surface: #131c2e;
+  --surface-elevated: #1a2742;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --overlay-dark: rgba(0, 0, 0, 0.92);
+
+  --foreground: #f1f5f9;
+  --muted-foreground: #94a3b8;
+
+  --card: #1a2742;
+  --card-foreground: #f1f5f9;
+  --popover: #1a2742;
+  --popover-foreground: #f1f5f9;
+
+  --primary: #38bdf8;
+  --primary-foreground: #0c1222;
+
+  --secondary: #1e293b;
+  --secondary-foreground: #f1f5f9;
+
+  --accent: #f5a623;
+  --accent-foreground: #0c1222;
+
+  --muted: #1e293b;
+  --destructive: #f87171;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: #38bdf8;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BASE LAYER
+   ═══════════════════════════════════════════════════════════ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    @apply transition-colors duration-300;
+    /* Better font rendering globally */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-family: var(--font-sans);
+    font-feature-settings:
+      "kern" 1,
+      "liga" 1,
+      "calt" 1;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  /* Headings → Nunito */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    @apply font-bold;
+    @apply text-primary dark:text-foreground;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  h1 {
+    font-size: clamp(1.875rem, 4vw, 3rem);
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  /* Navbar / dashboard labels → Lexend (university-sans) */
+  .font-university-sans,
+  [data-section="student"] {
+    font-family: var(--font-university-sans);
+    letter-spacing: -0.015em;
+  }
+
+  /* Scrollbar */
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  *::-webkit-scrollbar-track {
+    @apply bg-muted rounded-full;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 hover:bg-primary/75 rounded-full;
+    border: 1.5px solid transparent;
+    background-clip: padding-box;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(59 130 246) rgb(243 244 246);
+  }
+
+  .dark * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) var(--surface);
+  }
+  .dark *::-webkit-scrollbar-track {
+    background: var(--surface);
+  }
+  .dark *::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 9999px;
+  }
+  .dark *::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-foreground);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COMPONENTS
+   ═══════════════════════════════════════════════════════════ */
+@layer components {
+  /* ── Navbar ──────────────────────────────────────────────
+     StudentNavbar handles its own classes directly.
+     This .navbar-header class is kept for any legacy usage.
+     ─────────────────────────────────────────────────────── */
+  .navbar-header {
+    @apply transition-all duration-300;
+    font-family: var(--font-university-sans);
+    letter-spacing: -0.015em;
+
+    /* Light: dark glass: visually distinct from page content */
+    background: rgba(5, 14, 29, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgb(248 250 252);
+    box-shadow:
+      0 8px 32px -8px rgba(0, 0, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+  /* Dark: slightly deeper, same glass */
+  .dark .navbar-header {
+    background: rgba(4, 10, 20, 0.92);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  /* Nav link typography */
+  .nav-link {
+    font-family: var(--font-university-sans);
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Brand gradient text ─────────────────────────────── */
+  .text-gradient {
+    @apply bg-gradient-to-r from-[var(--primary)] to-[var(--brand-cyan)]
+           bg-clip-text text-transparent
+           dark:from-[var(--primary)] dark:to-[var(--secondary)];
+  }
+
+  /* ── Primary CTA button ──────────────────────────────── */
+  .btn-holyann {
+    font-family: var(--font-university-sans);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    @apply bg-gradient-to-r from-[var(--primary)] to-[var(--brand-cyan)]
+           text-white rounded-xl px-6 py-2.5
+           hover:opacity-90 hover:-translate-y-px
+           active:scale-[0.98]
+           transition-all duration-200 shadow-md
+           dark:from-[var(--primary)] dark:to-[var(--secondary)];
+  }
+
+  /* ── Section title ───────────────────────────────────── */
+  .section-title {
+    font-family: var(--font-heading);
+    @apply text-xl font-bold text-center uppercase tracking-tight
+           text-primary dark:text-white relative mb-8;
+    letter-spacing: -0.02em;
+  }
+  .section-title::after {
+    content: "";
+    @apply block w-12 h-0.5 bg-[var(--secondary)] dark:bg-[var(--accent)]
+           mx-auto mt-3 rounded-full;
+  }
+
+  /* ── Card ────────────────────────────────────────────── */
+  .card-holyann {
+    @apply bg-card rounded-2xl shadow-sm border border-border p-6
+           hover:shadow-md transition-all duration-300;
+  }
+
+  /* ── Modal overlay ───────────────────────────────────── */
+  .modal-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center;
+    background-color: var(--overlay);
+  }
+
+  /* ── Badge / label (university-sans accent) ────────────── */
+  .badge-hoex {
+    font-family: var(--font-university-sans);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FONT UTILITIES
+   ═══════════════════════════════════════════════════════════ */
+.font-university-sans {
+  font-family: var(--font-university-sans);
+}
+.font-university-display {
+  font-family: var(--font-university-display);
+}
+.font-essay {
+  font-family: var(--font-essay);
+}
+.font-display {
+  font-family: var(--font-display);
+}
+.font-serif-display {
+  font-family: var(--font-noto-serif-display), Georgia, serif;
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BACKGROUND HELPERS
+   ═══════════════════════════════════════════════════════════ */
+
+/* Auth page grid */
+.dark .auth-page-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Hero grid + rays */
+.hero-grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(15 76 129 / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 76 129 / 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.dark .hero-grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(56 189 248 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(56 189 248 / 0.06) 1px, transparent 1px);
+}
+.hero-rays {
+  background: radial-gradient(
+    ellipse 90% 60% at 50% -15%,
+    rgb(15 76 129 / 0.12),
+    transparent 55%
+  );
+}
+.dark .hero-rays {
+  background: radial-gradient(
+    ellipse 90% 60% at 50% -15%,
+    rgb(56 189 248 / 0.1),
+    transparent 55%
+  );
+}
+
+/* Landing always light */
+html.dark .landing-light {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted-foreground: #64748b;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --primary: #0f4c81;
+  --primary-foreground: #ffffff;
+  --border: #e2e8f0;
+}
+html.dark .landing-light .hero-grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(15 76 129 / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 76 129 / 0.08) 1px, transparent 1px);
+}
+html.dark .landing-light .hero-rays {
+  background: radial-gradient(
+    ellipse 90% 60% at 50% -15%,
+    rgb(15 76 129 / 0.12),
+    transparent 55%
+  );
+}
+
+/* ── Báo cáo học sinh: in PDF / máy in rõ chữ (tương phản cao, ít làm mịn giả) ── */
+@media print {
+  .reports-print-scope {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    /* Ghi đè theme (kể cả dark) để chữ đậm nền trắng */
+    --background: #ffffff;
+    --foreground: #020617;
+    --card: #ffffff;
+    --card-foreground: #020617;
+    --muted: #f1f5f9;
+    --muted-foreground: #334155;
+    --border: #64748b;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    background: #ffffff !important;
+    color: var(--foreground) !important;
+  }
+
+  .reports-print-scope * {
+    text-shadow: none !important;
+  }
+
+  .reports-print-scope .shadow-lg,
+  .reports-print-scope .shadow-md,
+  .reports-print-scope .shadow-sm,
+  .reports-print-scope .shadow-xl {
+    box-shadow: none !important;
+  }
+}

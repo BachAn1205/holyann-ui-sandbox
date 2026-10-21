@@ -1,0 +1,188 @@
+/**
+ * Calm Admission Dossier — scoped under .profile-creative-root.
+ * Brand accent: Holyann deep blue.
+ * Type: Nunito headings (--font-heading), Lexend body (--font-sans).
+ */
+
+.profile-creative-root {
+  --pc-primary: #0f4c81;
+  --pc-accent: #0072ff;
+  --pc-cyan: #00c6ff;
+  --pc-success: #15803d;
+  --pc-warning: #b45309;
+  --pc-danger: #dc2626;
+  --pc-text: #0f172a;
+  --pc-muted: #64748b;
+  --pc-surface: #ffffff;
+  --pc-mist: #f4f7fb;
+  --pc-border: color-mix(in srgb, #0f4c81 12%, #e2e8f0);
+  --pc-radius: 1rem;
+  --pc-shadow: 0 1px 2px color-mix(in srgb, #0f4c81 6%, transparent),
+    0 8px 24px color-mix(in srgb, #0f4c81 7%, transparent);
+}
+
+.profile-creative-root .profile-creative-page-bg {
+  background-color: var(--pc-mist);
+  background-image:
+    radial-gradient(ellipse 100% 70% at 0% -10%, rgba(15, 76, 129, 0.08), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 20%, rgba(0, 198, 255, 0.06), transparent 50%);
+}
+
+.dark .profile-creative-root .profile-creative-page-bg {
+  background-color: rgb(15 23 42);
+  background-image:
+    radial-gradient(ellipse 100% 70% at 0% -10%, rgba(56, 189, 248, 0.1), transparent 55%),
+    radial-gradient(ellipse 80% 50% at 100% 20%, rgba(15, 76, 129, 0.2), transparent 50%);
+}
+
+.profile-creative-root .profile-creative-scope {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--pc-text);
+}
+
+.dark .profile-creative-root .profile-creative-scope {
+  color: inherit;
+}
+
+/* Display headings — --font-heading role */
+.profile-creative-root .profile-creative-scope .pc-display {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.2 !important;
+}
+
+/* Small labels */
+.profile-creative-root .profile-creative-scope .pc-mono-caps {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pc-muted);
+}
+
+.profile-creative-root .profile-creative-scope .pc-read-sans {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: -0.01em !important;
+}
+
+.profile-creative-root .profile-creative-scope h4,
+.profile-creative-root .profile-creative-scope h5,
+.profile-creative-root .profile-creative-scope h6 {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Soft elevation — replaces sticker offset shadow */
+.profile-creative-root .pc-sticker-shadow,
+.profile-creative-root.pc-sticker-shadow {
+  box-shadow: var(--pc-shadow);
+}
+
+.dark .profile-creative-root .pc-sticker-shadow,
+.dark .profile-creative-root.pc-sticker-shadow {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 10px 28px rgb(0 0 0 / 0.28);
+}
+
+/* Identity rail surface */
+.profile-creative-root .pc-hero-surface {
+  border: 1px solid var(--pc-border);
+  background:
+    linear-gradient(135deg, rgba(15, 76, 129, 0.06) 0%, rgba(255, 255, 255, 0.95) 45%, rgba(0, 198, 255, 0.05) 100%),
+    var(--pc-surface);
+  border-radius: var(--pc-radius);
+}
+
+.dark .profile-creative-root .pc-hero-surface {
+  border-color: color-mix(in srgb, white 12%, transparent);
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgb(30 41 59 / 0.9) 50%, rgba(15, 76, 129, 0.25) 100%);
+}
+
+.profile-creative-root .pc-chip-primary {
+  border: 1px solid color-mix(in srgb, var(--pc-primary) 80%, transparent);
+  background: var(--pc-primary);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--pc-primary) 25%, transparent);
+}
+
+.dark .profile-creative-root .pc-chip-primary {
+  border-color: color-mix(in srgb, white 15%, transparent);
+  background: #38bdf8;
+  color: #0c1222;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.3);
+}
+
+.profile-creative-root .pc-chip-ghost {
+  border: 1px solid var(--pc-border);
+  background: var(--pc-surface);
+  box-shadow: none;
+}
+
+.dark .profile-creative-root .pc-chip-ghost {
+  border-color: color-mix(in srgb, white 14%, transparent);
+  background: rgb(30 41 59 / 0.7);
+}
+
+/* Shared panel shell for dossier cards */
+.profile-creative-root .pc-panel {
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius);
+  background: var(--pc-surface);
+  box-shadow: var(--pc-shadow);
+  overflow: hidden;
+}
+
+.dark .profile-creative-root .pc-panel {
+  border-color: color-mix(in srgb, white 12%, transparent);
+  background: rgb(30 41 59 / 0.85);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 10px 28px rgb(0 0 0 / 0.28);
+}
+
+.profile-creative-root .pc-panel-header {
+  border-bottom: 1px solid var(--pc-border);
+  background: color-mix(in srgb, var(--pc-primary) 4%, transparent);
+}
+
+.dark .profile-creative-root .pc-panel-header {
+  border-bottom-color: color-mix(in srgb, white 10%, transparent);
+  background: color-mix(in srgb, #38bdf8 6%, transparent);
+}
+
+/* Ranked wishlist rows */
+.profile-creative-root .pc-rank-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 0.7rem 0.25rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--pc-border) 80%, transparent);
+  transition: background-color 0.2s ease;
+}
+
+.profile-creative-root .pc-rank-row:last-child {
+  border-bottom: none;
+}
+
+.profile-creative-root .pc-rank-row:hover {
+  background: color-mix(in srgb, var(--pc-primary) 4%, transparent);
+}
+
+.profile-creative-root .pc-rank-num {
+  flex-shrink: 0;
+  width: 1.75rem;
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  color: var(--pc-primary);
+  text-align: center;
+}
+
+.dark .profile-creative-root .pc-rank-num {
+  color: #38bdf8;
+}
