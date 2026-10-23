@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getToken } from 'next-auth/jwt'
+import { authSecret } from '@/lib/auth/auth-secret'
 
 const PRICING_PATH = '/student/pricing'
 
@@ -46,7 +47,7 @@ export async function proxy(req: NextRequest) {
   const protectApi = isProtectedApi(pathname)
   if (!protectPage && !protectApi) return NextResponse.next()
 
-  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET })
+  const token = await getToken({ req, secret: authSecret })
 
   if (!token) return NextResponse.next()
 

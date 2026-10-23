@@ -2,6 +2,7 @@ import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { AuthService } from '@/lib/services/auth.service'
+import { authSecret } from '@/lib/auth/auth-secret'
 import { prisma } from '@/lib/prisma'
 
 export const authOptions: NextAuthOptions = {
@@ -204,6 +205,6 @@ export const authOptions: NextAuthOptions = {
     signIn: '/login',
     error: '/login', // Redirect to login page on error
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: authSecret,
   debug: process.env.NODE_ENV === 'development', // Enable debug in development
 }
