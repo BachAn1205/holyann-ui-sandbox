@@ -2,6 +2,7 @@
  * UI sandbox: in-memory sample data only.
  * This file never opens a database connection.
  */
+import type { PrismaClient } from "@prisma/client";
 import { sampleStores } from "@/lib/sample-data";
 
 type Row = Record<string, unknown>;
@@ -41,20 +42,46 @@ function matchWhere(row: Row, where: unknown): boolean {
 }
 
 function relatedRows(model: string, row: Row): Row[] | Row | null {
-  const studentId = (row.user_id as string) || (row.id as string);
   const store = sampleStores[model];
   if (!store) return null;
+  const ownerId =
+    (row.user_id as string) ||
+    (row.student_id as string) ||
+    (row.id as string);
+
   if (model === "students") {
-    return store.find((item) => item.user_id === row.id) ?? null;
+    return store.find((item) => item.user_id === ownerId) ?? null;
   }
   if (model === "mentors") {
-    return store.find((item) => item.user_id === row.id) ?? null;
+    const mentorId = (row.mentor_id as string) || ownerId;
+    return store.find((item) => item.user_id === mentorId) ?? null;
+  }
+  if (model === "users") {
+    return store.find((item) => item.id === ownerId) ?? null;
   }
   if (model === "university_rankings" || model === "universities") {
     return store.find((item) => item.id === row.university_id) ?? null;
   }
+  if (model === "student_backgrounds") {
+    return store.find((item) => item.student_id === ownerId) ?? null;
+  }
+  if (model === "checklist_tasks") {
+    if (row.task_id) return store.find((item) => item.id === row.task_id) ?? null;
+    if (row.stage_id != null) {
+      return store.filter((item) => item.stage_id === row.stage_id);
+    }
+  }
+  if (model === "checklist_stages") {
+    if (row.stage_id != null) {
+      return store.find((item) => item.id === row.stage_id) ?? null;
+    }
+  }
   return store.filter(
-    (item) => item.student_id === studentId || item.user_id === row.id,
+    (item) =>
+      item.student_id === ownerId ||
+      item.user_id === ownerId ||
+      item.background_id === ownerId ||
+      item.background_id === row.id,
   );
 }
 
@@ -195,4 +222,4 @@ export const prisma = new Proxy(
       return modelApi(key);
     },
   },
-) as never;
+) as unknown as PrismaClient;

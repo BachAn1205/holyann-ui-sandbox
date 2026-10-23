@@ -371,7 +371,7 @@ function TargetPageContent() {
         seen.add(value);
         opts.push({
           faculty_name: fname,
-          university_id: null,
+          university_id: typeof item.university_id === "number" ? item.university_id : null,
           university_name: uname,
           value,
         });

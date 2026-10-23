@@ -5,8 +5,8 @@ import { MessageType } from '@prisma/client';
 import { sendChatNotificationEmail } from '@/lib/email/chat-notification';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://example.invalid";
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "sandbox-anon-key";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface SendMessageInput {

@@ -53,6 +53,16 @@
   ],
   "exclude": [
     "node_modules",
-    "nextjs-realtime-chat"
+    "nextjs-realtime-chat",
+    "scripts",
+    "tests",
+    ".storybook",
+    "add_cols.ts",
+    "get-sizes.ts",
+    "inspect_progress.ts",
+    "inspect_tasks.ts",
+    "inspect_user.ts",
+    "query-chat.ts",
+    "playwright.config.ts"
   ]
 }
